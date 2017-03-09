@@ -5,7 +5,7 @@ JKBCrypt is an implementation of bcrypt written in Swift. It currently is able t
 ## Install via CocoaPods
 Just add 
 ```
-pod 'JKBCrypt'
+pod 'JKBCrypt', :git => 'https://github.com/Paul-Geppert/JKBCrypt.git'
 ```
 to your `Podfile` and run `pod install`.
 
@@ -46,7 +46,9 @@ More tests for the functions in the `JKBCrypt` and `JKBCryptRandom` classes.
 
 ### Optimization
 
-The code was written in Swift2. The code was optimized by using `UnsafePointer<Type>` for much of the array indexing but is still significantly slower than bcrypt running in Objective-C on the same machine (Objective-C: ~0.2s/10 rnds; Swift: 4-5s/10 rnds). _Needs to be verified for Swift2._
+The original code was written in Swift2. The code was optimized by using `UnsafePointer<Type>` for much of the array indexing but is still significantly slower than bcrypt running in Objective-C on the same machine (Objective-C: ~0.2s/10 rnds; Swift: 4-5s/10 rnds). _Needs to be verified for Swift2._
+
+This version is updated to Swift3.
 
 ## Issues, Bugs, etc.
 
@@ -57,3 +59,5 @@ If you have any issues, bugs, or feature suggestions, please create an issue.
 This project was inspired by and based on the Objective-C port by Jay Fuerstenberg ([Git Repo](https://github.com/jayfuerstenberg/JFCommon)).
 
 The Objective-C port is based on the original Java implementation by Damien Miller found [here](http://www.mindrot.org/projects/jBCrypt/).
+
+This repo was forked from [koogle/JKBCrypt](https://github.com/koogle/JKBCrypt).
