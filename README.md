@@ -36,6 +36,7 @@ The `verifyPassword(matchesHash:)` class convenience function will hash the pass
 
 ## Example
 
+Beware: The examples are not yet ported! (They are in Swift 2.)
 There is an example Xcode project that uses the JKBCrypt functions to calculate salts, hashes, and compare hashes. See the example project for a better understanding on how to use the functions.
 
 ## Roadmap
